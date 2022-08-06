@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="A.Tereschenko" email="freelancer.ua.1992@gmail.com">
+    <title>Login form</title>
+
+    <link rel="stylesheet" href="css/reseter.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <button class="btn close_btn" name="close_btn" type="button">
+                <img src="img/icon/exit.svg" alt="">
+            </button>
+            <h1>Member Sign In</h1>
+            <div class="top">
+                <p>Not a member yet?</p>
+                <a href="#">Sign up now <div class="line"></div></a>
+            </div>
+
+
+            <form action="#" onsubmit="return false" id="form_signIn">
+                <div class="input_wrapper">
+                    <div class="icon">
+                        <img src="img/icon/user.svg" alt="">
+                    </div>
+                    <input type="email" id="email" placeholder="Username/Email" required>
+                </div>
+
+                <div class="input_wrapper">
+                    <div class="icon">
+                        <img src="img/icon/locks.svg" alt="">
+                    </div>
+                    <input type="password" class="pass" placeholder="Password" required>
+                    <div class="ayes">
+                        <a><img src="img/icon/aye.svg" alt="" class="ayeClosed"></a>
+                        <a><img src="img/icon/aye open.svg" alt="" class="ayeOpened hide"></a>
+                    </div>
+                </div>
+            </form>
+
+            <div class="bottom_wrapper">
+                <button type="submit" class="btn submit_btn" form="form_signIn" value="Login" onclick="lsRememberMe()">Sign In</button>
+                <div class="remember">
+                    <label class="rememberCheck">
+                        <input type="checkbox" checked="" value="lsRememberMe" id="rememberMe" form="form_signIn">
+                        <span class="checkmark"></span>
+                        Remember me
+                    </label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </div>
+        </div>
+        <img src="img/icon/Designed_By_Freepik.svg" alt="" class="copyright">
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
