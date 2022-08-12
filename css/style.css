@@ -1,289 +1,65 @@
 * {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #8cccff;
 }
 
 .wrapper {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 500px;
     margin: 0 auto;
-    background:
-        linear-gradient(90deg, rgba(246, 145, 47, 0.5), rgba(245, 48, 0, 1), rgba(246, 145, 47, 0.5)),
-        repeating-linear-gradient(rgba(246, 145, 47, 0.5), rgba(246, 145, 47, 0.5) 12px, rgba(245, 48, 0, 1) 12px, rgba(245, 48, 0, 1) 17px);
-}
-
-.container {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: #E1E1E1;
-    margin-top: 67.15px;
     position: relative;
-    width: 365.7px;
-    max-width: 100%;
 }
 
-.container::after {
-    content: '';
-    position: absolute;
-    bottom: -6.11px;
-    width: 99%;
-    height: 6.11px;
-    background: #BFC1BF;
-    box-shadow: 0 -3px 2px #E1E1E1 inset;
+.wrapper {
+    position: relative;
+    width: 300px;
 }
 
-.copyright {
-    margin-top: 20.67px;
-}
-
-.btn {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    background-color: #E65848;
-    border: 1px solid #E1E1E1;
-    color: #E1E1E1;
-}
-
-.btn:hover{
-    border: 1px solid #E65848;
-    background-color: #E1E1E1;
-    color: #E65848;
-}
-
-.btn:hover img {
-    filter: brightness(0) saturate(100%) invert(49%) sepia(85%) saturate(3689%) hue-rotate(336deg) brightness(98%) contrast(83%);
-}
-
-.close_btn {
-    position: absolute;
-    right: 3.69px;
-    top: 4.14px;
-    width: 16.52px;
-    height: 16.52px;
-}
-
-h1 {
-    font-size: 26px;
-    line-height: 31px;
-    color: #343844;
-
-    margin-top: 47.04px;
-}
-
-.top {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    font-size: 10px;
-    line-height: 12px;
-    color: #FFFFFF;
-
-    margin-top: 6.36px;
-    gap: 3.18px;
-}
-
-.top p {
-    display: flex;
-    justify-content: end;
-}
-
-.top a {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    gap: 3.31px;
-}
-
-.top a {
-    color: #FFFFFF;
-}
-
-.top a:hover {
-    color: #E65848;
-}
-
-.top a:hover .line {
-    background: #E65848;
-}
-
-.line {
-    height: 1px;
-    width: 57.44px;
-    background: #FFFFFF;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 29.71px;
-    gap: 16.62px;
+.wrapper .inputBox {
+    position: relative;
     width: 100%;
-    padding-left: 37.34px;
-    padding-right: 37.34px;
+    background: #fff;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 15px25px rgba(0, 0, 0, 0.15);
 }
 
-.input_wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
+.wrapper .inputBox input {
     position: relative;
-}
-
-.icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 45.42px;
-    height: 45.42px;
-    background: #E65848;
-}
-
-input {
-    display: flex;
-    width: 245.61px;
-    max-width: 100%;
-    padding-top: 12.1px;
-    padding-bottom: 15.32px;
-    padding-left: 19.96px;
-    font-size: 15px;
-    line-height: 18px;
-}
-
-input::placeholder {
-    font-size: 15px;
-    line-height: 18px;
-    color: #C4C4C4;
-    opacity: 1;
-}
-
-.ayes {
-    position: absolute;
-    right: 17.91px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 29.6px;
-    height: 23.89px;
-    cursor: pointer;
-}
-
-.hide {
-    display: none;
-}
-
-.bottom_wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     width: 100%;
-    padding-left: 37.34px;
-    padding-right: 37.34px;
-    margin-top: 29.48px;
-    margin-bottom: 50.76px;
+    outline: none;
+    border: none;
+    padding: 10px 5px;
 }
 
-.submit_btn {
-    width: 137.32px;
-    height: 45.42px;
-
-    font-size: 20.5898px;
-    line-height: 25px;
-    flex-wrap: nowrap;
-}
-
-.remember {
+.wrapper .inputBox #toggleBtn {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 34px;
+    height: 34px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    cursor: pointer;
     display: flex;
-    flex-direction: column;
-    gap: 20.12px;
-    margin-left: 29px;
-    font-size: 10px;
-    line-height: 12px;
-    color: #343844;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Customize the label (the container) */
-.rememberCheck {
-    display: block;
-    position: relative;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  /* Hide the browser's default checkbox */
-  .rememberCheck input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  
-  /* Create a custom checkbox */
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: -21.59px;
-    width: 14.52px;
-    height: 14.52px;
-    background-color: #fff;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .rememberCheck:hover input ~ .checkmark {
-    background-color: #ccc;
-  }
-  
-  /* When the checkbox is checked, add a blue background */
-  .rememberCheck input:checked ~ .checkmark {
-    background-color: #354242;
-  }
-  
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  /* Show the checkmark when checked */
-  .rememberCheck input:checked ~ .checkmark:after {
-    display: block;
-  }
-  
-  /* Style the checkmark/indicator */
-  .rememberCheck .checkmark:after {
-    left: 5px;
-    width: 4px;
-    height: 9px;
-    border: solid white;
-    border-width: 0 1px 1px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-
-
-.remember a {
-    color: #343844;
+.wrapper .inputBox #toggleBtn::before {
+    content: '\f070';
+    font-family: fontAwesome;
 }
 
-.remember a:hover {
-    color: #E65848;
+.wrapper .inputBox #toggleBtn.hide::before {
+    content: '\f06e';
+    font-family: fontAwesome;
 }

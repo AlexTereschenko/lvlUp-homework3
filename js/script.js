@@ -1,40 +1,13 @@
-const ayeClosed = document.querySelector('.ayeClosed');
-const ayeOpened = document.querySelector('.ayeOpened');
-const passType = document.querySelector('.pass')
+const pswrd = document.getElementById('pswrd');
+const toggleBtn = document.getElementById('toggleBtn');
 
-ayeClosed.onclick = () =>{
-    ayeClosed.classList.toggle('hide');
-    ayeOpened.classList.toggle('hide');
-    passType.type='text'
-}
-
-ayeOpened.onclick = () =>{
-    ayeClosed.classList.toggle('hide');
-    ayeOpened.classList.toggle('hide');
-    passType.type='password'
-}
-
-
-
-
-
-const rmCheck = document.getElementById("rememberMe"),
-    emailInput = document.getElementById("email");
-
-if (localStorage.checkbox && localStorage.checkbox !== "") {
-  rmCheck.setAttribute("checked", "checked");
-  emailInput.value = localStorage.username;
-} else {
-  rmCheck.removeAttribute("checked");
-  emailInput.value = "";
-}
-
-function lsRememberMe() {
-  if (rmCheck.checked && emailInput.value !== "") {
-    localStorage.username = emailInput.value;
-    localStorage.checkbox = rmCheck.value;
+toggleBtn.onclick = () =>{
+  if(pswrd.type === 'password') {
+    pswrd.setAttribute('type', 'text');
+    toggleBtn.classList.toggle('hide');
   } else {
-    localStorage.username = "";
-    localStorage.checkbox = "";
-  }
+    pswrd.setAttribute('type', 'password');
+    toggleBtn.classList.toggle('hide');
+  } 
 }
+
